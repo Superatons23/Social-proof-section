@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+:root {
+  /*PRIMARY*/
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  /*NEUTRAL*/
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--white);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/bg-pattern-top-mobile.svg),
+    url(../images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top center, bottom center;
+}
+.container-main {
+  display: flex;
+  flex-direction: column;
+  margin: 80px 20px 80px 20px;
+  width: 21rem;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.service {
+  text-align: center;
+  width: 320px;
+  gap: 25px;
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 0.3rem;
+}
+.service h1 {
+  color: var(--very-dark-magenta);
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 32px;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.service p {
+  font-family: "League Spartan", sans-serif;
+  color: var(--dark-grayish-magenta);
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 25px;
+  letter-spacing: -0.8px;
+  margin: 0;
+}
+.star-boxes h1 {
+  margin: 0;
+  color: var(--very-dark-magenta);
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  margin-top: 7px;
+}
+.star-boxes > div {
+  text-align: center;
+  background-color: var(--light-grayish-magenta);
+  padding: 16px 0;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+.stars img {
+  margin-right: 4px;
+}
+
+/*CARDS*/
+.row-2 {
+  margin-top: 2rem;
+}
+.opinion {
+  background-color: var(--very-dark-magenta);
+  padding: 40px 32px 30px 32px;
+  border-radius: 8px;
+}
+.opinions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.opinion p {
+  margin-bottom: 0;
+}
+.img-top {
+  display: flex;
+  align-items: center;
+}
+.img-top img {
+  border-radius: 50%;
+  margin-right: 1.5rem;
+  width: 40px;
+  height: 40px;
+}
+
+.titles h1,
+h2 {
+  font-family: "League Spartan", sans-serif;
+  margin: 0;
+  font-size: 17px;
+  line-height: 20px;
+}
+.titles h1 {
+  color: var(--white);
+  font-weight: 500;
+}
+.titles h2 {
+  color: var(--soft-pink);
+  font-weight: 400;
+}
+.text > p {
+  color: var(--white);
+  font-family: "League Spartan", sans-serif;
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 17px;
+  letter-spacing: -0.5;
+  margin-top: 20px;
+}
+.attribution {
+  margin-top: 2rem;
+  font-size: 12px;
+  text-align: center;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 500;
+}
+.attribution a {
+  color: var(--soft-pink);
+  text-decoration: none;
+}
+/*MEDIAA*/
+@media (min-width: 1440px) {
+  .container-main {
+    width: 1110px;
+  }
+  .service {
+    text-align: start;
+    width: 445px;
+  }
+  .service h1 {
+    font-size: 56px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    margin-top: 0;
+  }
+  .service p {
+    width: 460px;
+  }
+  .star-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+  .star-boxes h1 {
+    margin: 0;
+  }
+  .stars-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .second {
+    margin-left: 2.5rem;
+  }
+  .third {
+    margin-left: 5rem;
+  }
+  .star-boxes > div {
+    padding: 16px 0 16px 25px;
+    width: 410px;
+  }
+
+  .opinions {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .opinion-first {
+    align-self: flex-start;
+  }
+  .opinion-second {
+    align-self: center;
+  }
+  .opinion-third {
+    align-self: flex-end;
+  }
+  .row-2 {
+    display: flex;
+    height: 265px;
+    margin-top: 6rem;
+  }
+  .row {
+    flex-direction: row;
+    gap: 9rem;
+  }
+  body {
+    background-image: url(../images/bg-pattern-top-desktop.svg),
+      url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+  }
+}
